@@ -1,2 +1,2 @@
 # Currículo 
-Site domínio do currículo https://gustavof1.github.io/Site/
+Site domínio do currículo https://gustavof1.github.io/Curriculo/
