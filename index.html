@@ -35,10 +35,13 @@
                     <a href="linkedin.com/linkedin-username">linkedin-username</a>
                 </p>-->
             </section>
+
             <section>
-                <h2>SKILLS</h2>
-                <p>C, C++, Python, HTML, GitHub, VS Code, Google Colaboratory/Jupyter Notebook, Blender </p>
+                <h2>APTIDÃO<Out></Out></h2>
+                <p>C, C++, Python, HTML, CSS, GitHub, VS Code, Google Colaboratory/Jupyter Notebook, Blender </p>
+                <P>CNH categoria B</P>
             </section>
+            
             <section>
                 <h2>EDUCAÇÃO</h2>
                 <b>MÉDIO</b>
@@ -54,18 +57,19 @@
                 <p>
                     2015/1
                 </p>
+                
                 <b>SUPERIOR</b>
                 <p>
                     PROMOVE - Sistemas para Internet(Trancado)
                 </p>
                 <p>
-                    2016
+                    2016 - 1 ano
                 </p>
                 <p>
                     Universidade Federal de Minas Gerais (UFMG) - Biblioteconomia(Trancado)
                 </p>
                 <p>
-                    2017-2019/1
+                    2017/2-2019/1 - 2 anos
                 </p>
                 <p>
                     Universidade Federal de Minas Gerais (UFMG) - Ciências da Computação
@@ -76,14 +80,27 @@
             </section>
 
             <section>
-                <p onclick="printFunction();">Salvar PDF</p>
+                <p>
+                <button class="button1" onclick="printFunction();">Salvar PDF</button>
                 <script>
                     function printFunction(){ 
-                        document.querySelector("#mainLeft > section:nth-child(4) > p").style.color = "white";
-
                         window.print(); 
                     }
                 </script>
+                </p>
+
+                <p>
+                <button class="button1" onclick="toggleDark()">Modo escuro/claro</button>
+
+                <script>
+                    function toggleDark() {
+                        var element = document.body;
+                        element.classList.toggle("light-mode");
+                    } 
+                </script>
+                </p>
+
+
 
             </section>
 
@@ -91,50 +108,62 @@
         <article id="mainRight">
             <section>
                 <h2>EXPERIÊNCIA</h2>
+
+
                 <h3><b>Jovem Aprendiz (Redes)</b></h3>
                 <p>
-                    Sankyu S.A. | 2015/2
+                    Sankyu S.A. | 2015/2 - 6 meses
                 </p>
-                <p>
-                    ◉Auxílio no suporte técnico do setor de tecnologia do escritório.
-                    Inventário de hardwares e softwares.
-                    Preparação e manutenção de desktops e laptops com instalação do SO Windows 7
-                     e programas como SAP, Symantec, Team Viewer, etc.
-                    Checagem de servidores e backups.
-                </p>
+                <ul>
+                    <li>Auxílio no suporte técnico do setor de tecnologia do escritório.</li>
+                    <li>Manutenção do inventário de hardwares e softwares.</li>
+                    <li>Preparação e manutenção de desktops e laptops com instalação dos Sistemas Operacionais Windows 7 e Windows 10
+                        e programas como SAP, Symantec, Team Viewer, etc.</li>
+                    <li>Checagem de servidores, banco de dados e backups.</li>
+
+                </ul>
+
+
                 <h3><b>Estágio (Arquivo)</b></h3>
                 <p>
                     Faculdade de Filosofia e Ciências Humanas - Univerisade Federal de Minas Gerais
-                     (FAFICH - UFMG) | 2018                </p>
-                <p>
-                    ◉Tratamento arquivistico de documentos de matrícula de alunos da faculdade do
-                     período de 1960-2000.
-                    Digitalização de documentos de matrícula. 
+                     (FAFICH - UFMG) | 2018 - 1 ano     
                 </p>
+                <ul>
+                    <li>Tratamento arquivistico de documentos de matrícula de alunos da faculdade do
+                        período de 1960-2000.</li>
+                    <li>Limpeza de documentos.</li>
+                    <li>Digitalização de documentos de matrícula. </li>
+                    <li>Auxílio na manutenção de computadores. </li>
+
+                </ul>
+                
+
+
                 <h3><b>Estágio (Biblioteca)</b></h3>
                 <p>
                     Biblioteca de Pós-graduação em Ciências da Computação do Instituto de Ciências
                      Exatas - Univerisade Federal de Minas Gerais (ICEx - UFMG) | 2019 - 2020
                 </p>
-                <p>
-                    ◉Inserção de teses, dissertações e monografias dos alunos de pós-graduação em
-                     cursos de ciências exatas no repositório digital da UFMG. Inserção de material
-                     no catálogo do sistema de bibliotecas da UFMG. Criação e manutenção da página 
-                     da biblioteca no Facebook. Auxílio na manutenção de computadores. Preparação de 
-                     material para a exposição e empréstimo da biblioteca. Auxílio na criação da catalogação da
-                      publicação e resumo/abstract de trabalhos acadêmicos. Atendimento aos usuários
-                       da biblioteca. Reposição de livros.
-                </p>
+                <ul>
+                    <li>Inserção de teses, dissertações e monografias dos alunos de pós-graduação em
+                     cursos de ciências exatas no repositório digital da UFMG.</li>
+                    <li>Inserção de material no catálogo do sistema de bibliotecas da UFMG.</li>
+                    <li>Criação e manutenção da página da biblioteca no Facebook.</li>
+                    <li>Auxílio na manutenção de computadores. </li>
+                    <li>Preparação de material para a exposição e empréstimo da biblioteca.</li>
+                    <li>Auxílio na criação da catalogação da publicação e resumo/abstract de trabalhos acadêmicos.</li>
+                    <li>Atendimento aos usuários da biblioteca.</li>
+                    <li>Reposição de livros.</li>
+                </ul>
             </section>
 
             <section>
                 <h2>IDIOMAS</h2>
+                <p>Portugues (nativo)</p>
                 <p>Inglês (sem certificado)</p>
                 <p>Espanhol (sem certificado)</p>
             </section>
-
-
-            
 
 
 

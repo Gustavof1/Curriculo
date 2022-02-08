@@ -54,4 +54,30 @@ h1, h2 {
     border-right: 1px solid lightgray;
  }
 
- 
+ @media (prefers-color-scheme: light) {
+	body {
+		background-color: white;
+		color: #222;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #222;
+		color: #fff;
+	}
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+  }
+
+.button1 {
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    margin: 1px 1px;
+    cursor: pointer;
+}
