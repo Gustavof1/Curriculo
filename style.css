@@ -18,7 +18,7 @@ h2 {
 
 main { 
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 28% 72%;
     margin-top: 3em;
 }
 
@@ -54,7 +54,7 @@ h1, h2 {
     border-right: 1px solid lightgray;
  }
 
- @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
 	body {
 		background-color: white;
 		color: #222;
