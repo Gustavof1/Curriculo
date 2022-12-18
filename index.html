@@ -7,6 +7,51 @@
 </head>
 
 <body>
+    
+   
+    <!-- script que transforma página em folha 3D -->
+    <script> 
+        // create a flag to track the state of the 3D effect
+        let is3DEnabled = false;
+
+        // create a counter to track the number of clicks
+        let clickCounter = 0;
+
+        // add an event listener to the document to enable the 3D effect on the tenth click
+        document.addEventListener("click", function() {
+        clickCounter++;
+        if (clickCounter === 25 && !is3DEnabled) {
+            // enable the 3D effect
+            document.body.style.transformStyle = "preserve-3d";
+            document.body.style.perspective = "500px";
+            is3DEnabled = true;
+
+            // add an event listener to update the body's transform property on mousemove
+            document.addEventListener("mousemove", function(event) {
+            let xRotation = (event.clientY / window.innerHeight - 0.5) * 180;
+            let yRotation = (event.clientX / window.innerWidth - 0.5) * 180;
+            document.body.style.transform = "rotateX(" + xRotation + "deg) rotateY(" + yRotation + "deg)";
+            });
+
+            // create a div element to display the message
+            let message = document.createElement("div");
+            message.textContent = "Recarregue a página para remover o efeito";
+            message.style.cssText = "position:fixed; top:150px; left:50%; color:black; transform:translateX(-50%); background-color:white; padding:20px; font-size:30px;";
+            document.body.appendChild(message);
+
+            // set a timeout to remove the message after 10 seconds
+            setTimeout(function() {
+            document.body.removeChild(message);
+            }, 10000);
+        }
+        });
+        
+    </script>
+
+
+    
+
+
     <header id="header">
         <h1><b>GUSTAVO</b></h1>
         <h1>FERREIRA DIAS</h1>
