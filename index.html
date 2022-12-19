@@ -11,35 +11,31 @@
    
     <!-- script que transforma página em folha 3D -->
     <script> 
-        // create a flag to track the state of the 3D effect
+        // flag e counter
         let is3DEnabled = false;
-
-        // create a counter to track the number of clicks
         let clickCounter = 0;
 
-        // add an event listener to the document to enable the 3D effect on the tenth click
         document.addEventListener("click", function() {
         clickCounter++;
         if (clickCounter === 25 && !is3DEnabled) {
-            // enable the 3D effect
+            
             document.body.style.transformStyle = "preserve-3d";
             document.body.style.perspective = "500px";
             is3DEnabled = true;
 
-            // add an event listener to update the body's transform property on mousemove
             document.addEventListener("mousemove", function(event) {
-            let xRotation = (event.clientY / window.innerHeight - 0.5) * 180;
-            let yRotation = (event.clientX / window.innerWidth - 0.5) * 180;
+            let xRotation = (event.clientY / window.innerHeight - 0.5) * 100;
+            let yRotation = (event.clientX / window.innerWidth - 0.5) * 100;
             document.body.style.transform = "rotateX(" + xRotation + "deg) rotateY(" + yRotation + "deg)";
             });
 
-            // create a div element to display the message
+            // mostra mensagem pra recarregar a página
             let message = document.createElement("div");
             message.textContent = "Recarregue a página para remover o efeito";
             message.style.cssText = "position:fixed; top:150px; left:50%; color:black; transform:translateX(-50%); background-color:white; padding:20px; font-size:30px;";
             document.body.appendChild(message);
 
-            // set a timeout to remove the message after 10 seconds
+            // mensagem some depois de 10 minutos
             setTimeout(function() {
             document.body.removeChild(message);
             }, 10000);
@@ -48,6 +44,7 @@
         
     </script>
 
+    <!--script brothermanbill-->
     <script>
       // create a flag to track whether the audio is playing
         let isPlaying = false;
@@ -74,23 +71,20 @@
         <h1><b>GUSTAVO</b></h1>
         <h1>FERREIRA DIAS</h1>
         <hr>
-        ESTAGIÁRIO - CIÊNCIA DA COMPUTAÇÃO
+        JUNIOR - CIENTISTA DA COMPUTAÇÃO
         <hr>
     </header>
+
     <main>
         <article id="mainLeft">
+
             <section>
                 <h2>CONTATO</h2>
                 <p>
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:ggustavoferreira@hotmail.com">ggustavoferreira@hotmail.com</a>
+                    <a> ggustavoferreira1@gmail.com</a>
                 </p>
-                <!--
-                <p>
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    <a href="https://api.whatsapp.com/send/?phone=%2B5531985765780&text&app_absent=0">Whatsapp</a>
-                </p>
-                
+                <!--                
                 <p>
                     <i class="fab fa-github" aria-hidden="true"></i>
                     <a href="github.com/gh-username">gh-username</a>
@@ -110,16 +104,20 @@
                     <li>Lua</li>
                     <li>Python</li>
                     <li>HTML/CSS/Javascript</li>
+                    <li>Verilog</li>
+                    <li>RISC-V Assembly</li>
                     <li>SQL</li>
 
                 </ul>
                 <b>Softwares</b>
                 <ul>
                     <li>VS Code</li>
+                    <li>Colaboratory/Jupyter</li>
                     <li>Docker</li>
                     <li>VirtualBox</li>
                     <li>Android Studio</li>
                     <li>Linode</li>
+                    <li>Office</li>
                     <li>Vegas Pro</li>
                     <li>DaVinci Resolve</li>
                     <li>Blender</li>
@@ -143,7 +141,6 @@
                 </script>
                 </p>
 
-
                 <p>
                 <h4 onclick="toggleDark()">Modo escuro/claro</h4>
 
@@ -158,21 +155,23 @@
             </section>
 
         </article>
+
         <article id="mainRight">
 
             <section>
                 <h2>EDUCAÇÃO</h2>
-                <b>MÉDIO/TÉCNICO</b>
-                <ul>
-                    <li> Escola Estadual Governador Milton Campos (Estadual Central)</li>
-                    <li> SENAI - Redes de Computadores</li>
-                </ul>
                 
                 <b>SUPERIOR</b>
                 <ul>
                     <li> Ciência da Computação - Universidade Federal de Minas Gerais (UFMG) | 2019-Atualmente</li>
                     <li> Sistemas para Internet - PROMOVE (Trancado) | 2016 </li>
                     <li> Biblioteconomia - Universidade Federal de Minas Gerais (UFMG) (Trancado) | 2017-2019</li>
+                </ul>
+                
+                <b>MÉDIO/TÉCNICO</b>
+                <ul>
+                    <li> Escola Estadual Governador Milton Campos (Estadual Central)</li>
+                    <li> SENAI - Redes de Computadores</li>
                 </ul>
             </section>
 
@@ -215,7 +214,7 @@
                     <li>Preparação de material para a exposição e empréstimo.</li>
                     <li>Auxílio na criação da catalogação da publicação e resumo de trabalhos acadêmicos.</li>
                     <li>Atendimento à usuários.</li>
-                    <li>Reposição de prateleiras.</li>
+                    <li>Reposição de material.</li>
                 </ul>
             </section>
 

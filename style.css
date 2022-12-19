@@ -16,11 +16,19 @@ h2 {
     padding-bottom: 1em;
 }
 
+/* grid template separa a página em 2 lados */
 main { 
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 32% 68%;
     margin-top: 3em;
 }
+
+/* detecta celular (tamanho da tela 700px de largura) */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: none;
+    }
+  }
 
 header {
     text-align: center;
@@ -54,6 +62,8 @@ h1, h2 {
     border-right: 1px solid lightgray;
  }
 
+/* detecta dark theme e light theme */
+
 @media (prefers-color-scheme: light) {
 	body {
 		background-color: white;
@@ -73,6 +83,7 @@ h1, h2 {
     color: black;
   }
 
+/* botão para trocar light theme e dark theme manualmente */
 .button1 {
     background-color: white;
     border: none;
