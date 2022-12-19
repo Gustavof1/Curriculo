@@ -24,7 +24,7 @@ main {
 }
 
 /* detecta celular (tamanho da tela 700px de largura) */
-@media (max-width: 320px) {
+@media (max-width: 0) and (min-width: 0) and (max-height: 100%) and (min-height: 100%) {
     main {
         grid-template-columns: none;
     }
