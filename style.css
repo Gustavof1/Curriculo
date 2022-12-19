@@ -23,12 +23,13 @@ main {
     margin-top: 3em;
 }
 
-/* detecta celular (tamanho da tela 700px de largura) */
-@media (max-width: 0) and (min-width: 0) and (max-height: 100%) and (min-height: 100%) {
+/* detecta celular*/
+@media only screen and (hover: none) and (pointer: coarse){
     main {
         grid-template-columns: none;
     }
-  }
+}
+
 
 header {
     text-align: center;
