@@ -45,28 +45,6 @@
         
     </script>
 
-    <!--script brothermanbill-->
-    <script>
-      // create a flag to track whether the audio is playing
-        let isPlaying = false;
-
-        // add an event listener to the document to start the audio when the user types "p"
-        document.addEventListener("keydown", function(event) {
-        if (event.key === "p" && !isPlaying) {
-            isPlaying = true;
-
-            // create the audio element and add it to the page
-            let audio = document.createElement("audio");
-            audio.src = "Brotherman Bill.mp3"; // replace with the path to your song file
-            audio.loop = true;
-            document.body.appendChild(audio);
-
-            // start the audio
-            audio.play();
-        }
-        });
-    </script>
-
 
     <header id="header">
         <h1><b>GUSTAVO</b></h1>
