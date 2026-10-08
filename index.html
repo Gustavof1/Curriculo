@@ -1,211 +1,83 @@
-<html>
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Currículo Gustavo</title>
-    <link rel="icon" href="iconepag.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gustavo Ferreira Dias — computação, inteligência artificial e desenvolvimento de software. Formação, conhecimentos, experiência e contato profissional.">
+  <meta name="theme-color" content="#111111">
+  <title>Gustavo Ferreira Dias | Perfil profissional</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    
-   
-    <!-- script que transforma página em folha 3D -->
-    <script> 
-        // flag e counter
-        let is3DEnabled = false;
-        let clickCounter = 0;
-
-        document.addEventListener("click", function() {
-        clickCounter++;
-        if (clickCounter === 25 && !is3DEnabled) {
-            
-            document.body.style.transformStyle = "preserve-3d";
-            document.body.style.perspective = "500px";
-            is3DEnabled = true;
-
-            document.addEventListener("mousemove", function(event) {
-            let xRotation = (event.clientY / window.innerHeight - 0.5) * 100;
-            let yRotation = (event.clientX / window.innerWidth - 0.5) * 100;
-            document.body.style.transform = "rotateX(" + xRotation + "deg) rotateY(" + yRotation + "deg)";
-            });
-
-            // mostra mensagem pra recarregar a página
-            let message = document.createElement("div");
-            message.textContent = "Recarregue a página para remover o efeito";
-            message.style.cssText = "position:fixed; top:150px; left:50%; color:black; transform:translateX(-50%); background-color:white; padding:20px; font-size:30px;";
-            document.body.appendChild(message);
-
-            // mensagem some depois de 10 minutos
-            setTimeout(function() {
-            document.body.removeChild(message);
-            }, 10000);
-        }
-        });
-        
-    </script>
-
-
-    <header id="header">
-        <h1><b>GUSTAVO</b></h1>
-        <h1>FERREIRA DIAS</h1>
-        <hr>
-        JUNIOR - CIENTISTA DA COMPUTAÇÃO
-        <hr>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="Gustavo Ferreira Dias, início"><span class="monogram" aria-hidden="true">GF</span><span>Gustavo Ferreira Dias</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#conhecimentos">Conhecimentos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
 
-    <main>
-        <article id="mainLeft">
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-line" aria-hidden="true"></span>Perfil profissional</p>
+          <h1 id="titulo-principal">Gustavo<br> Ferreira Dias<span class="name-dot" aria-hidden="true">.</span></h1>
+          <p class="hero-subtitle">Computação, inteligência artificial e desenvolvimento de software.</p>
+          <p class="hero-description">Estudante de Ciência da Computação na UFMG. Experiência com desenvolvimento de software, jogos e interfaces gráficas, além de inteligência artificial e redes de computadores.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="curriculo-gustavo-ferreira.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Formação e perfis profissionais">
+          <div class="panel-top"><span class="panel-mark" aria-hidden="true">GF</span><p>Formação acadêmica<br><strong>UFMG</strong></p></div>
+          <dl class="profile-facts">
+            <div><dt>Formação atual</dt><dd>Ciência da Computação <span>Universidade Federal de Minas Gerais</span></dd></div>
+            <div><dt>Conclusão prevista</dt><dd>1º semestre de 2027</dd></div>
+          </dl>
+          <div class="profile-links">
+            <a href="https://github.com/Gustavof1">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/gustavo-ferreira-cs/">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </aside>
+      </section>
 
-            <section>
-                <h2>CONTATO</h2>
-                <p>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a> ggustavoferreira1@gmail.com</a>
-                </p>
-                <!--                
-                <p>
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    <a href="github.com/gh-username">gh-username</a>
-                </p>-->
-                <!--<p>
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    <a href="linkedin.com/linkedin-username">linkedin-username</a>
-                </p>
-                -->
-            </section>
+      <section class="section skills-section" id="conhecimentos" aria-labelledby="titulo-conhecimentos">
+          <div class="section-heading"><p class="section-number" aria-hidden="true">01</p><div><p class="eyebrow">Áreas e tecnologias</p><h2 id="titulo-conhecimentos">Conhecimentos</h2></div></div>
+          <div class="skill-group"><h3>Programação</h3><ul class="tag-list"><li>C</li><li>C++</li><li>Python</li><li>Lua</li><li>JavaScript</li><li>PHP</li><li>SQL</li></ul></div>
+          <div class="skill-group"><h3>Inteligência artificial</h3><ul class="tag-list"><li>Aprendizado de máquina</li><li>Redes neurais</li><li>Diffusers</li><li>Agentes de IA</li></ul></div>
+          <div class="skill-group"><h3>Interfaces e web</h3><ul class="tag-list"><li>Experiência do usuário</li><li>HTML</li><li>CSS</li><li>APIs</li><li>Three.js</li><li>Babylon.js</li></ul></div>
+          <div class="skill-group"><h3>Desenvolvimento de jogos</h3><ul class="tag-list"><li>SDL</li><li>Unity</li><li>Unreal Engine</li></ul></div>
+          <div class="skill-group"><h3>Redes</h3><ul class="tag-list"><li>Redes de computadores</li></ul></div>
+          <div class="skill-group complementary"><h3>Conhecimento complementar</h3><p>Blender — experiência com criação em 3D.</p></div>
+          <div class="skill-group"><h3>Idiomas</h3><p class="language-description">Inglês: boa leitura e escrita; conversação básica.</p></div>
+      </section>
 
-            <section>
-                <h2>APTIDÃO<Out></Out></h2>
-                <b>Programação</b>
-                <ul>
-                    <li>C/C++</li>
-                    <li>Lua</li>
-                    <li>Python</li>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>Verilog</li>
-                    <li>RISC-V Assembly</li>
+      <section class="section experience-section" id="experiencia" aria-labelledby="titulo-experiencia">
+          <div class="section-heading"><p class="section-number" aria-hidden="true">02</p><div><p class="eyebrow">Trajetória profissional</p><h2 id="titulo-experiencia">Experiência</h2></div></div>
+          <div class="timeline">
+            <article class="experience-item"><div class="experience-heading"><h3>Estagiário · Biblioteca</h3><p class="date">2019–2020</p></div><p class="organization">Biblioteca de Pós-graduação · ICEx / UFMG</p><ul><li>Inserção de trabalhos acadêmicos no repositório digital e no catálogo da UFMG.</li><li>Atendimento a usuários e organização do acervo para consulta e empréstimo.</li></ul></article>
+            <article class="experience-item"><div class="experience-heading"><h3>Estagiário · Arquivo</h3><p class="date">2018</p></div><p class="organization">Faculdade de Filosofia e Ciências Humanas · UFMG</p><ul><li>Digitalização, tratamento e organização de documentos.</li><li>Atividades de conservação do acervo.</li></ul></article>
+            <article class="experience-item"><div class="experience-heading"><h3>Jovem aprendiz · Redes</h3><p class="date">2015 · Vínculo de 1 ano</p></div><p class="organization">Sankyu S.A. · Formação SENAI e prática na empresa</p><ul><li>Atividades de preparação e manutenção de computadores.</li><li>Atualização de inventário de hardware e software.</li></ul></article>
+          </div>
+      </section>
 
-                </ul>
-                <b>Softwares</b>
-                <ul>
-                    <li>VS Code</li>
-                    <li>Colaboratory/Jupyter</li>
-                    <li>Docker</li>
-                    <li>VirtualBox</li>
-                    <li>Android Studio</li>
-                    <li>Linode</li>
-                    <li>Office</li>
-                    <li>DaVinci Resolve</li>
-                    <li>Blender</li>
-                </ul>
-                <b>Outros</b>
-                <ul>
-                    <li>CNH categoria B</li>
-                </ul>
-            </section>
-            
-            
+      <section class="section education-section" id="formacao" aria-labelledby="titulo-formacao">
+        <div class="section-heading"><p class="section-number" aria-hidden="true">03</p><div><p class="eyebrow">Trajetória acadêmica</p><h2 id="titulo-formacao">Formação</h2></div></div>
+        <div class="education-content">
+          <article class="current-education"><p class="education-label">Em andamento</p><h3>Ciência da Computação</h3><p>Universidade Federal de Minas Gerais</p><p class="education-detail">Conclusão prevista: 1º semestre de 2027</p></article>
+          <div class="education-additional"><h3>Formação complementar</h3><p>Redes de Computadores · SENAI</p><details><summary>Estudos anteriores</summary><ul><li><strong>Sistemas para Internet · PROMOVE</strong><span>2 anos cursados · curso não concluído</span></li><li><strong>Biblioteconomia · UFMG</strong><span>2 anos e 6 meses cursados · curso não concluído</span></li></ul></details></div>
+        </div>
+      </section>
 
-            <section>
-
-                <p>
-                <h4  onclick="printFunction();">Salvar PDF</h4>
-                <script>
-                    function printFunction(){ 
-                        window.print(); 
-                    }
-                </script>
-                </p>
-
-                <p>
-                <h4 onclick="toggleDark()">Modo escuro/claro</h4>
-
-                <script>
-                    function toggleDark() {
-                        var element = document.body;
-                        element.classList.toggle("light-mode");
-                    } 
-                </script>
-                </p>
-
-            </section>
-
-        </article>
-
-        <article id="mainRight">
-
-            <section>
-                <h2>EDUCAÇÃO</h2>
-                
-                <b>SUPERIOR</b>
-                <ul>
-                    <li> Ciência da Computação - Universidade Federal de Minas Gerais (UFMG) | 2019-Atualmente</li>
-                    <li> Sistemas para Internet - PROMOVE (Trancado) | 2016 </li>
-                    <li> Biblioteconomia - Universidade Federal de Minas Gerais (UFMG) (Trancado) | 2017-2019</li>
-                </ul>
-                
-                <b>MÉDIO/TÉCNICO</b>
-                <ul>
-                    <li> Escola Estadual Governador Milton Campos (Estadual Central)</li>
-                    <li> SENAI - Redes de Computadores</li>
-                </ul>
-            </section>
-
-            <section>
-
-                <h2>EXPERIÊNCIA</h2>
-
-                <h3><b>Jovem Aprendiz (Redes)</b></h3>
-                <p>
-                    Sankyu S.A. | 2015 - 1 ano
-                </p>
-                <ul>
-                    <li>Auxílio no suporte técnico do setor de tecnologia.</li>
-                    <li>Manutenção de inventário de hardwares e softwares.</li>
-                    <li>Preparação e manutenção de desktops e laptops.</li>
-                    <li>Checagem de servidores, banco de dados e backups.</li>
-                </ul>
-
-                <h3><b>Estágio (Arquivo)</b></h3>
-                <p>
-                    Faculdade de Filosofia e Ciências Humanas - Univerisade Federal de Minas Gerais
-                     (FAFICH - UFMG) | 2018 - 1 ano     
-                </p>
-                <ul>
-                    <li>Digitalização de documentos.</li>
-                    <li>Auxílio na manutenção de computadores.</li>
-                    <li>Tratamento arquivistico, limpeza e recuperação de documentos.</li>
-                </ul>
-                
-                <h3><b>Estágio (Biblioteca)</b></h3>
-                <p>
-                    Biblioteca de Pós-graduação em Ciências da Computação do Instituto de Ciências
-                     Exatas - Univerisade Federal de Minas Gerais (ICEx - UFMG) | 2019 - 2020 - 2 anos
-                </p>
-                <ul>
-                    <li>Inserção de teses, dissertações e monografias no repositório digital da UFMG.</li>
-                    <li>Inserção de material no catálogo do sistema de bibliotecas da UFMG.</li>
-                    <li>Criação e manutenção de perfis e páginas nas redes sociais.</li>
-                    <li>Auxílio na manutenção de computadores. </li>
-                    <li>Preparação de material para a exposição e empréstimo.</li>
-                    <li>Auxílio na criação da catalogação da publicação e resumo de trabalhos acadêmicos.</li>
-                    <li>Atendimento à usuários.</li>
-                    <li>Reposição de material.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>IDIOMAS</h2>
-                <p>Português</p>
-                <p>Inglês</p>
-            </section>
-
-        </article>
+      <section class="section contact-section" id="contato" aria-labelledby="titulo-contato">
+        <div class="section-heading"><p class="section-number" aria-hidden="true">04</p><div><p class="eyebrow">Informações profissionais</p><h2 id="titulo-contato">Contato</h2></div></div>
+        <div class="contact-links"><a class="email-link" href="mailto:ggustavoferreira1@gmail.com">ggustavoferreira1@gmail.com <span aria-hidden="true">↗</span></a><div><a href="https://github.com/Gustavof1">GitHub</a><a href="https://www.linkedin.com/in/gustavo-ferreira-cs/">LinkedIn</a></div></div>
+      </section>
     </main>
+    <footer class="site-footer"><p>Gustavo Ferreira Dias</p><a href="curriculo-gustavo-ferreira.pdf" download>Currículo em PDF <span aria-hidden="true">↓</span></a><a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a></footer>
+  </div>
 </body>
-
 </html>
